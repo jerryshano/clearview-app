@@ -1,5 +1,5 @@
 # 🏡 Clearview Carehome Static Site
-
+😸
 A fully responsive **static website** built with **HTML and CSS** to showcase my business to clients.
 
 ## Features

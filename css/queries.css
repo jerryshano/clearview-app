@@ -250,7 +250,7 @@ when used in media queries.  */
   }
   .heading-secondary {
     font-size: 3.6rem;
-    margin-bottom: 8rem;
+    margin-bottom: 3rem;
   }
   .grid {
     column-gap: 2rem;

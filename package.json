@@ -1,0 +1,16 @@
+{
+  "name": "responsive-page",
+  "version": "1.0.0",
+  "description": "😸 A fully responsive **static website** built with **HTML and CSS** to showcase my business to clients.",
+  "main": "index.js",
+  "scripts": {
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "prettier": "^3.8.3"
+  }
+}

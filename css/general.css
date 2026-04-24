@@ -49,7 +49,7 @@ html {
   overflow-x: hidden;
 }
 body {
-  font-family: "Source Serif Pro", sans-serif;
+  font-family: 'Source Serif Pro', sans-serif;
   line-height: 1;
   font-weight: 400;
   color: #333;
@@ -99,7 +99,7 @@ body {
 .heading-secondary {
   font-size: 4.4rem;
   line-height: 1.2;
-  margin-bottom: 9.6rem;
+  margin-bottom: 2rem;
 }
 .heading-tertiary {
   font-size: 3rem;
@@ -128,6 +128,18 @@ body {
 .btn--full:hover,
 .btn--full:active {
   background-color: #806e67;
+}
+.btn--outline:link,
+.btn--outline:visited {
+  background-color: #eef3f7;
+  color: #4f627d;
+  border: 1px solid #9fb1c5;
+}
+.btn--outline:hover,
+.btn--outline:active {
+  background-color: #dbe5ef;
+  color: #3f5168;
+  border-color: #8ea3bb;
 }
 /***************************/
 /* helper classes */

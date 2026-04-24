@@ -1,53 +1,53 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-XDJ6N389XT"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
+      function gtag() {
+        dataLayer.push(arguments);
+      }
       gtag('js', new Date());
 
       gtag('config', 'G-XDJ6N389XT');
     </script>
-      <!-- Event snippet for Click to call (1) conversion page
+    <!-- Event snippet for Click to call (1) conversion page
     In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
     <script>
       function gtag_report_conversion(url) {
         var callback = function () {
-          if (typeof(url) != 'undefined') {
+          if (typeof url != 'undefined') {
             window.location = url;
           }
         };
         gtag('event', 'conversion', {
-            'send_to': 'AW-323199899/6zqcCKLRnZwcEJvHjpoB',
-            'value': 1.0,
-            'currency': 'USD',
-            'event_callback': callback
+          send_to: 'AW-323199899/6zqcCKLRnZwcEJvHjpoB',
+          value: 1.0,
+          currency: 'USD',
+          event_callback: callback,
         });
         return false;
       }
-      </script>
-      <!-- Event snippet for Submit lead form (1) conversion page https://formsubmit.co/jerry2dev@gmail.com
+    </script>
+    <!-- Event snippet for Submit lead form (1) conversion page https://formsubmit.co/jerry2dev@gmail.com
       In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
-      <script>
-        function gtag_report_conversion(url) {
-          var callback = function () {
-            if (typeof(url) != 'undefined') {
-              window.location = url;
-            }
-          };
-          gtag('event', 'conversion', {
-              'send_to': 'AW-323199899/UZb0CO6Vn5wcEJvHjpoB',
-              'value': 1.0,
-              'currency': 'USD',
-              'event_callback': callback
-          });
-          return false;
-        }
-      </script>
-  
-      
+    <script>
+      function gtag_report_conversion(url) {
+        var callback = function () {
+          if (typeof url != 'undefined') {
+            window.location = url;
+          }
+        };
+        gtag('event', 'conversion', {
+          send_to: 'AW-323199899/UZb0CO6Vn5wcEJvHjpoB',
+          value: 1.0,
+          currency: 'USD',
+          event_callback: callback,
+        });
+        return false;
+      }
+    </script>
 
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -68,11 +68,7 @@
     <header class="header">
       <div class="header-xbar">
         <a href="../index.html">
-          <img
-            src="../img/logo.png"
-            alt="clearview carehome logo"
-            class="logo"
-          />
+          <img src="../img/logo.png" alt="clearview carehome logo" class="logo" />
         </a>
         <div class="address">
           <a href="#">
@@ -98,9 +94,7 @@
           <li><a href="contact.html" class="main-nav-link">Contact Us</a></li>
           <li><a href="gallery.html" class="main-nav-link">Gallery</a></li>
           <li>
-            <a href="tel:831-673-1434" class="main-nav-link nav-cta"
-              >Call Us Now</a
-            >
+            <a href="tel:831-673-1434" class="main-nav-link nav-cta">Call Us Now</a>
           </li>
         </ul>
       </nav>
@@ -147,11 +141,10 @@
           <div class="contact-text-box">
             <h1 class="heading-primary">Contact Clearview Carehome</h1>
             <p>
-              The best way to learn more about us is to talk over the phone and
-              arrange a time so <br />
+              The best way to learn more about us is to talk over the phone and arrange a time so
+              <br />
               you can visit and experience our community for yourself. <br />
-              We would also be happy to respond to any inquiries you send us
-              online.
+              We would also be happy to respond to any inquiries you send us online.
             </p>
           </div>
         </div>
@@ -160,39 +153,25 @@
             class="contact-form padding-top-md"
             action="https://formsubmit.co/jerry2dev@gmail.com"
             method="POST"
-          > 
+          >
             <input type="hidden" name="_subject" value="New email wooooo!" />
             <input type="hidden" name="_cc" value="frkankel@gmail.com" />
-            <input type="hidden" name="_next" value="https://clearviewcarehome.com/html/thanks.html">
+            <input
+              type="hidden"
+              name="_next"
+              value="https://clearviewcarehome.com/html/thanks.html"
+            />
             <div class="one">
               <label for="name">full name</label>
-              <input
-                id="name"
-                name="name"
-                type="text"
-                placeholder="your name"
-                required
-              />
+              <input id="name" name="name" type="text" placeholder="your name" required />
             </div>
             <div class="two">
               <label for="email">email address</label>
-              <input
-                id="email"
-                name="email"
-                type="text"
-                placeholder="your email"
-                required
-              />
+              <input id="email" name="email" type="text" placeholder="your email" required />
             </div>
             <div class="three">
               <label for="number">phone number</label>
-              <input
-                id="number"
-                name="number"
-                type="text"
-                placeholder="your number"
-                required
-              />
+              <input id="number" name="number" type="text" placeholder="your number" required />
             </div>
             <div class="four">
               <label for="message">message area</label>
@@ -206,9 +185,7 @@
                 required
               ></textarea>
             </div>
-            <button type="submit" class="btn btn--form five">
-              Send Message
-            </button>
+            <button type="submit" class="btn btn--form five">Send Message</button>
           </form>
         </div>
       </section>
@@ -227,11 +204,7 @@
       <div class="container grid grid--footer center-text">
         <div class="logo-col">
           <a href="#" class="footer-logo">
-            <img
-              class="logo"
-              src="../img/logo.png"
-              alt="clearview carehome logo"
-            />
+            <img class="logo" src="../img/logo.png" alt="clearview carehome logo" />
           </a>
         </div>
         <div class="address-col">
@@ -244,9 +217,7 @@
         </div>
         <div class="contact-col">
           <p>
-            <a class="footer-link" href="mailto:frkankel@gmail.com"
-              >frkankel@gmail.com</a
-            >
+            <a class="footer-link" href="mailto:frkankel@gmail.com">frkankel@gmail.com</a>
             <br />
             <a class="footer-link" href="tel:831-673-1434">831-673-1434</a>
           </p>
@@ -257,10 +228,7 @@
       type="module"
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
     ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
-    ></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script src="../js/script.js"></script>
   </body>
 </html>

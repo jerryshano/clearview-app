@@ -1,11 +1,13 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-XDJ6N389XT"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
+      function gtag() {
+        dataLayer.push(arguments);
+      }
       gtag('js', new Date());
 
       gtag('config', 'G-XDJ6N389XT');
@@ -15,20 +17,20 @@
     <script>
       function gtag_report_conversion(url) {
         var callback = function () {
-          if (typeof(url) != 'undefined') {
+          if (typeof url != 'undefined') {
             window.location = url;
           }
         };
         gtag('event', 'conversion', {
-            'send_to': 'AW-323199899/6zqcCKLRnZwcEJvHjpoB',
-            'value': 1.0,
-            'currency': 'USD',
-            'event_callback': callback
+          send_to: 'AW-323199899/6zqcCKLRnZwcEJvHjpoB',
+          value: 1.0,
+          currency: 'USD',
+          event_callback: callback,
         });
         return false;
       }
-      </script>
-  
+    </script>
+
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -48,11 +50,7 @@
     <header class="header">
       <div class="header-xbar">
         <a href="../index.html">
-          <img
-            src="../img/logo.png"
-            alt="clearview carehome logo"
-            class="logo"
-          />
+          <img src="../img/logo.png" alt="clearview carehome logo" class="logo" />
         </a>
         <div class="address">
           <a href="#">
@@ -78,9 +76,7 @@
           <li><a href="contact.html" class="main-nav-link">Contact Us</a></li>
           <li><a href="gallery.html" class="main-nav-link">Gallery</a></li>
           <li>
-            <a href="tel:831-673-1434" class="main-nav-link nav-cta"
-              >Call Us Now</a
-            >
+            <a href="tel:831-673-1434" class="main-nav-link nav-cta">Call Us Now</a>
           </li>
         </ul>
       </nav>
@@ -172,11 +168,7 @@
       <div class="container grid grid--footer center-text">
         <div class="logo-col">
           <a href="#" class="footer-logo">
-            <img
-              class="logo"
-              src="../img/logo.png"
-              alt="clearview carehome logo"
-            />
+            <img class="logo" src="../img/logo.png" alt="clearview carehome logo" />
           </a>
         </div>
         <div class="address-col">
@@ -189,9 +181,7 @@
         </div>
         <div class="contact-col">
           <p>
-            <a class="footer-link" href="mailto:frkankel@gmail.com"
-              >frkankel@gmail.com</a
-            >
+            <a class="footer-link" href="mailto:frkankel@gmail.com">frkankel@gmail.com</a>
             <br />
             <a class="footer-link" href="tel:831-673-1434">831-673-1434</a>
           </p>
@@ -202,10 +192,7 @@
       type="module"
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
     ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
-    ></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script src="../js/script.js"></script>
   </body>
 </html>

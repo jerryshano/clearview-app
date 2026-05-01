@@ -1,6 +1,20 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != 'dataLayer' ? '&l=' + l : '';
+        j.async = true;
+        j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, 'script', 'dataLayer', 'GTM-WJBRQKDR');
+    </script>
+    <!-- End Google Tag Manager -->
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-XDJ6N389XT"></script>
     <script>
@@ -55,11 +69,53 @@
         color: white;
       }
 
+      /* Soft blend from hero image into the next section color (#c5d5e4 on .looking) */
+      .hero::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: clamp(72px, 18vw, 160px);
+        pointer-events: none;
+        background: linear-gradient(to bottom, transparent, #c5d5e4);
+      }
+
       .hero img {
+        display: block;
         width: 100%;
         height: 450px;
         object-fit: cover;
         filter: brightness(60%);
+      }
+
+      /* Flush against hero: no baseline gap under img + no extra top padding */
+      .hero + .section {
+        padding-top: 0;
+      }
+
+      .looking {
+        padding: 60px 20px;
+        max-width: 1000px;
+        margin: auto;
+        text-align: center;
+        background-color: #c5d5e4;
+      }
+
+      .section-prose h2 {
+        font-size: 2.25rem;
+        line-height: 1.25;
+        margin: 0 0 1.5rem;
+      }
+
+      .section-prose p {
+        font-size: 1.75rem;
+        line-height: 1.65;
+        margin: 0 0 1.25rem;
+      }
+
+      .section-prose p:last-child {
+        margin-bottom: 0;
       }
 
       .hero-content {
@@ -99,6 +155,13 @@
         margin: auto;
         text-align: center;
         background-color: #c5d5e4;
+      }
+      .section-schedule {
+        padding: 60px 20px;
+        max-width: 1000px;
+        margin: auto;
+        text-align: center;
+        background-color: #f2dbc8;
       }
 
       .services-grid {
@@ -193,7 +256,7 @@
     </section>
 
     <!-- PROBLEM -->
-    <section class="section">
+    <section class="looking section-prose">
       <h2>Looking for Assisted Living Near You?</h2>
 
       <p>Choosing the right care for a loved one can feel overwhelming.</p>
@@ -211,7 +274,7 @@
 
     <!-- SERVICES -->
 
-    <section class="section-services">
+    <section class="section-services section-prose">
       <div class="container">
         <h2 class="center-text">Our Care Services</h2>
 
@@ -273,7 +336,7 @@
       </div>
     </section>
     <!-- TRUST -->
-    <section class="section">
+    <section class="section section-prose">
       <h2>Why Families Trust Clearview Care Home</h2>
 
       <p>
@@ -290,7 +353,7 @@
     </section>
 
     <!-- CTA -->
-    <section class="section">
+    <section class="section-prose section-schedule">
       <h2>Schedule a Tour or Speak With Us Today</h2>
 
       <p>Have questions or want to see our home in person?</p>
@@ -307,7 +370,7 @@
     </section>
 
     <!-- LOCAL -->
-    <section class="section">
+    <section class="section section-prose">
       <h2>Serving Hollister and Surrounding Areas</h2>
 
       <p>

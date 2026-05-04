@@ -95,11 +95,52 @@
       }
 
       .looking {
-        padding: 60px 20px;
+        position: relative;
+        padding: 40px 40px;
         max-width: 1000px;
         margin: auto;
         text-align: center;
         background-color: #c5d5e4;
+      }
+      .services {
+        position: relative;
+        padding: 40px 40px;
+        max-width: 1000px;
+        margin: auto;
+        text-align: center;
+        background-color: #f2dbc8;
+      }
+      /* Soft blend from services into the next section (#c5d5e4 on .section) */
+      .services > * {
+        position: relative;
+        z-index: 1;
+      }
+      .services::after {
+        content: '';
+        position: absolute;
+        z-index: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: clamp(72px, 18vw, 160px);
+        pointer-events: none;
+        background: linear-gradient(to bottom, transparent, #c5d5e4);
+      }
+      /* Keep copy above the bottom fade (::after paints after in-flow content by default). */
+      .looking > * {
+        position: relative;
+        z-index: 1;
+      }
+      .looking::after {
+        content: '';
+        position: absolute;
+        z-index: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: clamp(72px, 18vw, 160px);
+        pointer-events: none;
+        background: linear-gradient(to bottom, transparent, #f2dbc8);
       }
 
       .section-prose h2 {
@@ -150,14 +191,14 @@
       }
 
       .section {
-        padding: 60px 20px;
+        padding: 40px 40px;
         max-width: 1000px;
         margin: auto;
         text-align: center;
         background-color: #c5d5e4;
       }
       .section-schedule {
-        padding: 60px 20px;
+        padding: 40px 40px;
         max-width: 1000px;
         margin: auto;
         text-align: center;
@@ -168,7 +209,6 @@
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
         gap: 20px;
-        margin-top: 30px;
       }
 
       .service-card {
@@ -274,7 +314,7 @@
 
     <!-- SERVICES -->
 
-    <section class="section-services section-prose">
+    <section class="services section-prose">
       <div class="container">
         <h2 class="center-text">Our Care Services</h2>
 
@@ -336,7 +376,7 @@
       </div>
     </section>
     <!-- TRUST -->
-    <section class="section section-prose">
+    <section class="looking section-prose">
       <h2>Why Families Trust Clearview Care Home</h2>
 
       <p>
@@ -353,7 +393,7 @@
     </section>
 
     <!-- CTA -->
-    <section class="section-prose section-schedule">
+    <section class="section-prose services">
       <h2>Schedule a Tour or Speak With Us Today</h2>
 
       <p>Have questions or want to see our home in person?</p>

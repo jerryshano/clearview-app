@@ -194,6 +194,16 @@ when used in media queries.  */
   .section-contact {
     padding: 3.2rem 0 3.2rem 0;
   }
+  .section-thanks {
+    padding: 4.8rem 0;
+  }
+  .thanks-grid {
+    grid-template-columns: 1fr;
+    gap: 3.2rem;
+  }
+  .thanks-img-wrap img {
+    max-height: 32rem;
+  }
   .padding-top-md {
     padding-top: 4.8rem;
   }
